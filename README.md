@@ -9,7 +9,7 @@ AWS Lambda and scheduled for execution by AWS EventBridge. Logs were monitored u
 - The data of interest included: videoID, video title and video statistics (view, like and comment count).
 - It is also worth noting that as the API response contained large amounts of data it was spread over several pages. Therefore, within the API call a nextPageToken key is contained enabling the user to retrieve the next page of results.
 - Although the code to retrieve the subsequent pages of API responses was made, it was commented out to simplify and reduce code execution time, as the focus of the project was not the quantity of results but the engineering of the pipeline.
-- Ultimately, the API query parameters (see documentation)[https://developers.google.com/youtube/v3/docs/videos/list] required for this project included:
+- Ultimately, the API query parameters (see documentation) [https://developers.google.com/youtube/v3/docs/videos/list] required for this project included:
   - API key
   - channel ID
   - part=snippet,id: The part parameter specifies a comma-separated list of one or more video resource properties that the API response will include. Of the provided resource properties snippet and id were used.
