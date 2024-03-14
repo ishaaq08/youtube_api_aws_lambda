@@ -1,5 +1,5 @@
 ## Methodology
 ### Python script
-### Reconfigure code for AWS Lambda function
+### Reconfigure code for AWS Lambda function including any project dependencies
 ### Deploy and test code
 ### Create a scheduling rule on AWS EventBridge to schedule the execution of the script
