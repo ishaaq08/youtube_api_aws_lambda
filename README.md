@@ -49,9 +49,8 @@ The below steps outline the process involved in retrieving the neccesary files t
 5) From the terminal change into the directory in which the wheel file is saved.
 6) Run `wheel unpack {complete-file-name-including-extension}' - for example mine was `wheel unpack psycopg2_binary-2.9.9-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl`.
 7) Go into the newly created directory - based on the above file name the new folder was called **psycopg2_binary-2.9.9** - and copy all of the folders within.
-8) Create a new folder called **python** and paste these folders into this new folder - the parent folder must be called python due to AWS requirements **(or so I think???)**.
-9) Zip this folder called python - via powershell change into the directory which contains the python folder (**not into the python directory**) and run `Compress-Archive {path} {destination-path}`. **NOTE: 
-the name of the zip file doesn't have to be python, the name of its child folder has to be called python which contains all the necessary packages!**
+8) Create a new folder called **python** and paste these folders into this new folder - *not sure if it has to be called python but apparently by conventions it's good practice*.
+9) Zip this folder called python - via powershell change into the directory which contains the python folder and run `Compress-Archive {path} {destination-path}`.
 10) Upload this ZIP file as an AWS layer and add it to the AWS Lambda function.
 
 ### Deploy and test code
